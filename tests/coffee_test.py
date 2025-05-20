@@ -13,7 +13,7 @@ def test_coffee_name_not_string():
     with pytest.raises(ValueError):
         Coffee(123) 
 
-def test_coffee_name_is_immutable():
+def test_coffee_name_is_imixmutable():
     coffee = Coffee("Latte")
     with pytest.raises(AttributeError):
         coffee.name = "Mocha" 
